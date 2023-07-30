@@ -1,17 +1,34 @@
-<h1>Template (Local) Reference Variable & @ViewChild decorator</h1>
+<div class="container">
+  <h1 class="mb-4">
+    Template (Local) Reference Variable & @ViewChild decorator
+  </h1>
 
-<ul>
-  <li>Can be added to any element in DOM using # as the first character</li>
-  <li>
-    Using Template reference we can access DOM elements and their properties
-  </li>
-  <li>Can be used only in the HTML template</li>
-  <li>
-    To access in TS component we need to explicitly pass the reference to TS
-    trough an event in the HTML template.
-  </li>
-  <li>
-    Sometimes we need to get access to the DOM before we trigger an event in
-    HTML. For that type of usecase, we can use @ViewChild
-  </li>
-</ul>
+  <ul>
+    <li>Can be added to any element in DOM using # as the first character</li>
+    <li>
+      Using Template reference we can access DOM elements and their properties
+    </li>
+    <li>Can be used only in the HTML template</li>
+    <li>
+      To access in TS component we need to explicitly pass the reference to TS
+      trough an event in the HTML template.
+    </li>
+    <li>
+      Sometimes we need to get access to the DOM before we trigger an event in
+      HTML. For that type of usecase, we can use @ViewChild
+    </li>
+  </ul>
+
+  <form class="row row-cols-lg-auto g-3 align-items-center">
+    <div class="col-8">
+      <div class="form-group">
+        <input type="text" class="form-control" id="" placeholder="" />
+      </div>
+    </div>
+    <div class="col-4">
+      <button type="button" class="btn btn-primary" (click)="sendInput()">
+        Calculate
+      </button>
+    </div>
+  </form>
+</div>
