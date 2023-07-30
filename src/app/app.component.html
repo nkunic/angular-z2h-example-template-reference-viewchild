@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container py-4">
   <h1 class="mb-4">
     Template (Local) Reference Variable & @ViewChild decorator
   </h1>
@@ -19,24 +19,26 @@
     </li>
   </ul>
 
+  <h2>Example:</h2>
+
+  <p #channelName>WebTechTalk</p>
+
   <form class="row row-cols-lg-auto g-3 align-items-center">
     <div class="col-8">
-      <div class="form-group">
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Enter text"
-          #myInput
-        />
-      </div>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter text"
+        #myInput
+      />
     </div>
     <div class="col-4">
       <button
         type="button"
         class="btn btn-primary"
-        (click)="sendInput(myInput)"
+        (click)="sendInput(myInput, channelName)"
       >
-        Send
+        Click
       </button>
     </div>
   </form>
