@@ -1,1 +1,17 @@
-<h1>Template Reference Variable & @ViewChild decorator</h1>
+<h1>Template (Local) Reference Variable & @ViewChild decorator</h1>
+
+<ul>
+  <li>Can be added to any element in DOM using # as the first character</li>
+  <li>
+    Using Template reference we can access DOM elements and their properties
+  </li>
+  <li>Can be used only in the HTML template</li>
+  <li>
+    To access in TS component we need to explicitly pass the reference to TS
+    trough an event in the HTML template.
+  </li>
+  <li>
+    Sometimes we need to get access to the DOM before we trigger an event in
+    HTML. For that type of usecase, we can use @ViewChild
+  </li>
+</ul>
