@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   sendInput(input, channel) {
+    // console.log(input);
     console.log(input.value);
-    console.log(channel);
+    // console.log(channel);
+    console.log(channel.innerText);
   }
 }
