@@ -21,7 +21,7 @@
 
   <h2>Example:</h2>
 
-  <p #channelName>WebTechTalk</p>
+  <p #channelName class="mb-4">WebTechTalk</p>
 
   <form class="row row-cols-lg-auto g-3 align-items-center">
     <div class="row">
@@ -52,13 +52,13 @@
           placeholder="Enter text"
           #myInputNew
           ngModel
+          name="first"
         />
       </div>
       <div class="col-4">
         <button
           type="button"
           class="btn btn-primary"
-          name="first"
           [disabled]="myInputNew.value.length === 0"
           (click)="sendInput(myInputNew, channelName)"
         >
