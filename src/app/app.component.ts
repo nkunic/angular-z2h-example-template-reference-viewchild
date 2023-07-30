@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   sendInput(input) {
-    console.log(input);
+    console.log(input.value);
   }
 }
