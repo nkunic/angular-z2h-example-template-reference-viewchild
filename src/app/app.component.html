@@ -24,45 +24,47 @@
   <p #channelName>WebTechTalk</p>
 
   <form class="row row-cols-lg-auto g-3 align-items-center">
-    <div class="col-8">
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Enter text"
-        #myInput
-      />
+    <div class="row">
+      <div class="col-8">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter text"
+          #myInput
+        />
+      </div>
+      <div class="col-4">
+        <button
+          type="button"
+          class="btn btn-primary"
+          (click)="sendInput(myInput, channelName)"
+        >
+          Click
+        </button>
+      </div>
     </div>
-    <div class="col-4">
-      <button
-        type="button"
-        class="btn btn-primary"
-        (click)="sendInput(myInput, channelName)"
-      >
-        Click
-      </button>
-    </div>
-  </form>
 
-  <form class="row row-cols-lg-auto g-3 align-items-center mt-3">
-    <div class="col-8">
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Enter text"
-        #myInputNew
-        ngModel
-      />
-    </div>
-    <div class="col-4">
-      <button
-        type="button"
-        class="btn btn-primary"
-        name="first"
-        [disabled]="myInputNew.value.length === 0"
-        (click)="sendInput(myInput, channelName)"
-      >
-        Click
-      </button>
+    <div class="row mt-3">
+      <div class="col-8">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter text"
+          #myInputNew
+          ngModel
+        />
+      </div>
+      <div class="col-4">
+        <button
+          type="button"
+          class="btn btn-primary"
+          name="first"
+          [disabled]="myInputNew.value.length === 0"
+          (click)="sendInput(myInput, channelName)"
+        >
+          Click
+        </button>
+      </div>
     </div>
   </form>
 </div>
