@@ -22,11 +22,16 @@
   <form class="row row-cols-lg-auto g-3 align-items-center">
     <div class="col-8">
       <div class="form-group">
-        <input type="text" class="form-control" id="" placeholder="" />
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter text"
+          #myInput
+        />
       </div>
     </div>
     <div class="col-4">
-      <button type="button" class="btn btn-primary" (click)="sendInput()">
+      <button type="button" class="btn btn-primary" (click)="sendInput(myInput)">
         Calculate
       </button>
     </div>
